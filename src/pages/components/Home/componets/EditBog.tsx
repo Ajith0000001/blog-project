@@ -68,7 +68,7 @@ export default function EditBlog() {
               type="submit"
               className="bg-gray-900 px-2 py-2 rounded-xl text-[white]"
             >
-              Submit from edit
+              Update
             </button>
           </div>
         </form>

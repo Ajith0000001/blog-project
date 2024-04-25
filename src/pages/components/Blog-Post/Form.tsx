@@ -39,8 +39,8 @@ export default function Form() {
   }
 
   return (
-    <>
-      <div className="flex flex-col w-[600px] mx-auto mt-[6rem] gap-4 justify-center items-center">
+    <div className="flex justify-center">
+      <div className="flex flex-col w-[600px]  mt-[6rem] gap-4 justify-center items-center">
         <form onSubmit={handleSubmit}>
           {" "}
           <Input heading="Title" type="text" name="title" />
@@ -57,6 +57,6 @@ export default function Form() {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }

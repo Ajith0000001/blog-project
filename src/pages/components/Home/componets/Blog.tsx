@@ -14,9 +14,11 @@ export default function Blog() {
         </div>
       )}
 
-      {postSliceData.map((item) => (
-        <SingleBlog key={item.id} {...item} />
-      ))}
+      <div className="flex flex-wrap gap-[3rem] justify-center my-[3rem]">
+        {postSliceData.map((item) => (
+          <SingleBlog key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 }
