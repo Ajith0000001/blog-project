@@ -15,7 +15,10 @@ const postSlice = createSlice({
       itemState.push(actions.payload);
     },
 
-    delete(state, actions: PayloadAction<{ id: string | number }>): Item {
+    delete(
+      state,
+      actions: PayloadAction<{ id: string | number | undefined }>
+    ): Item {
       const filteredItem = state.items.filter(
         (item) => item.id !== actions.payload.id
       );

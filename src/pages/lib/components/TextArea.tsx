@@ -8,8 +8,8 @@ export default function TextArea({
 }: {
   heading: string;
   name: string;
-  value: string | undefined;
-  handleChange: (e: ChangeEvent<HTMLTextAreaElement>, name: string) => void;
+  value?: string | undefined;
+  handleChange?: (e: ChangeEvent<HTMLTextAreaElement>, name: string) => void;
 }) {
   return (
     <div className="flex flex-col gap-2 pl-4 pt-6 ">
@@ -21,7 +21,7 @@ export default function TextArea({
         name={name}
         value={value}
         className="w-[300px] outline-none border-gray-500 border focus:border-blue-500  rounded-md py-1"
-        onChange={(e) => handleChange(e, name)}
+        onChange={(e) => handleChange && handleChange(e, name)}
       />
     </div>
   );

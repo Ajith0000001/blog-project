@@ -7,4 +7,4 @@ export type BlogData = {
 export type Item = {
   items: BlogData[];
 };
-export type Id = string | number;
+export type Id = string | number | undefined;
